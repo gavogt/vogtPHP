@@ -46,6 +46,7 @@ form {
     background-color: #dddddd;
     margin: 0 auto;
     padding: 3%;
+
 }
 form.input {
     margin: 0 auto;
@@ -64,6 +65,14 @@ form.input {
 
 .footer{
     text-align: center;
-    background-color: black;
+    background-color: #080808;
+    font-color: #9d9d9d;
     height: 100px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.form{
+    border-color: blue;
 }
