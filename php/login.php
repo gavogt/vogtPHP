@@ -10,10 +10,9 @@
         <meta charset="UTF-8">
         <!-- Latest compiled and minified CSS -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <?php include'refresh.php' ?>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>      
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <nav class="navbar-inverse navbar-toggleable-md navbar-light bg-faded">
@@ -33,7 +32,29 @@
             </div>
         </nav>
         <div class="container">
-            <h2 class="Oleo h2">Thank you!</h2>
+            <h2 class="Oleo h2">Login!</h2>
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-4">
+                </div>
+                <div class="col-sm-8 col-md-8 col-lg-4">
+                    <form class="form  ">
+                        <label>Username</label>
+                        <div>
+                            <input name = "userName" class="form-control mx-sm-4">
+                        </div>
+                        <br>
+                        <label>Password</label>
+                        <div>
+                            <input name = "password" class="form-control mx-sm-4">
+                        </div>
+                        <br>                        
+                        <button class="btn btn-default" name="submit" type="submit" value="Submit">Submit</button>
+                        <button class="btn btn-default" type="reset" value="Reset">Clear</button>                 
+                    </form>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-4">
+                </div>
+            </div>
         </div>
     </body>
 </html>

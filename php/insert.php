@@ -13,6 +13,11 @@
 		    $user[3] = $_POST["password"];
 		    $user[4] = $_POST["email"];
 		    $user[5] = $_POST["comments"];
+
+		    # Encrypt user's pass
+		    $hash = crypt('$user[3]');
+		    $user[3] = $hash;
+
 		    # Note to test SQL Injections
 		    $stmt = $db->prepare("INSERT INTO `userinfo` (`firstName`, `lastName`, `userName`, `password`, `email`, `comments`) VALUES (:firstName, :lastName, :userName, :password, :email, :comments)");
 		    # Parameter, Value
@@ -30,7 +35,7 @@
 	    }
 	  else
 	    {
-	    		echo 'Error!'; # Note to redesign
+	    	echo 'Error!'; # Note to redesign
 	    }
 
 ?>
