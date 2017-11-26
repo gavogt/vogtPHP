@@ -1,0 +1,56 @@
+.Oleo {
+    font-family: 'Oleo Script', cursive;
+    color: white;
+}
+.Centered {
+    text-align: center;
+}
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+    clear: none;
+}
+html {
+    margin: 0 auto;
+}
+body {
+    background-color: #433f45;
+}
+h2 {} li a {
+    margin: 0 auto;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+#myCarousel img {
+    width: auto;
+    height: 500px;
+    max-height: 500px;
+}
+.jumbotron {
+    clear: right;
+}
+table {
+    margin: 0 auto;
+}
+table td {
+    margin-left: 20%;
+}
+.testRow {
+    background-color: white;
+}
+form {
+    background-color: #dddddd;
+    margin: 0 auto;
+    padding: 3%;
+}
+form.input {
+    margin: 0 auto;
+}
+.input {} .btn {
+    padding: 2%;
+}
+.container {
+    padding: 1%;
+}
