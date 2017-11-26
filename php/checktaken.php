@@ -5,8 +5,7 @@
 	if (isset($_POST['submit']))
 	{
 
-		// New Array
-
+		# New Array
 		$user = array();
 		$user[0] = $_POST["firstName"];
 		$user[1] = $_POST["lastName"];
@@ -15,29 +14,45 @@
 		$user[4] = $_POST["email"];
 		$user[5] = $_POST["comments"];
 
-		// Verify
-		
-		$stmt = $db->prepare("SELECT userName FROM users WHERE userName = ':userName'");
-		$stmt->bindParam(':username', $user[2]);
+	    # Encrypt user's pass
+	    $hash = crypt('$user[3]');
+	    $user[3] = $hash;
 
-		// The prepared statement
-
+		# Prepare and excludee duplicate username 
+		$stmt = $db->prepare("SELECT userName FROM userinfo WHERE userName = :userName");
+		$stmt->bindParam(':userName', $user[2]);
 		$stmt->execute();
+
+
+		# Check for duplicate username entry
 		if ($stmt->rowCount() > 0)
 		{
-			echo "Please choose another name";
+			echo "Please choose another username";
 		}
 		else
 		{
 
-			// Redirect to thank you if sucessful
+			# Note to test SQL Injections
+			$stmt = $db->prepare("INSERT INTO `userinfo` (`firstName`, `lastName`, `userName`, `password`, `email`, `comments`) VALUES (:firstName, :lastName, :userName, :password, :email, :comments)");		
 
+			# Parameter, Value
+		    $stmt->bindValue(':firstName', $user[0]);
+		    $stmt->bindValue(':lastName', $user[1]);
+		    $stmt->bindValue(':userName', $user[2]);
+		    $stmt->bindValue(':password', $user[3]);
+		    $stmt->bindValue(':email', $user[4]);
+		    $stmt->bindValue(':comments', $user[5]);	
+
+			# The prepared statement
+			$stmt->execute();			
+
+			# Redirect to thank you if sucessful
 			header("Location:/mySite/php/thankyou.php");
 		}
 	}
 	else
 	{
-		echo 'Error!'; // Note to redesign
+		echo 'Error in design!'; # Note to redesign
 	}
 
 ?>
