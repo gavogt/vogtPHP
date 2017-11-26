@@ -14,9 +14,11 @@
 }
 html {
     margin: 0 auto;
+    height: 100%;
 }
 body {
     background-color: #433f45;
+    height: 100%;
 }
 h2 {} li a {
     margin: 0 auto;
@@ -53,4 +55,15 @@ form.input {
 }
 .container {
     padding: 1%;
+}
+
+.wrapper{
+    min-height: 100%;
+    margin: 0 auto -100px;
+}
+
+.footer{
+    text-align: center;
+    background-color: black;
+    height: 100px;
 }
