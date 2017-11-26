@@ -34,9 +34,9 @@
         <div class="container">
             <h2 class="Oleo h2">Login!</h2>
             <div class="row">
-                <div class="col-sm-2 col-md-2 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-lg-4">
                 </div>
-                <div class="col-sm-8 col-md-8 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-lg-4">
                     <form class="form  ">
                         <label>Username</label>
                         <div>
@@ -52,7 +52,7 @@
                         <button class="btn btn-default" type="reset" value="Reset">Clear</button>                 
                     </form>
                 </div>
-                <div class="col-sm-2 col-md-2 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-lg-4">
                 </div>
             </div>
         </div>
