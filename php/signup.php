@@ -27,7 +27,7 @@
          <div class="container">
             <div class="row">
                <div class="col-sm-6 col-md-6 col-lg-6 float-left">
-                  <form class="form" method="post" action="php/insert.php">
+                  <form class="form" method="post" action="php/checktaken.php">
                      <div class="form-horizontal">
                         <label>First name: </label>
                         <div>
