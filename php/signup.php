@@ -29,63 +29,45 @@
                     <div class="col-sm-6 col-md-6 col-lg-6 float-left">
                         <form class="form" method="post" action="php/insert.php">
                             <div class="form-horizontal">
-                                <label>First Name</label>
+                                <label>First name: </label>
                                 <div>
-                                    <input name="firstName" class="form-control mx-sm-4">
+                                    <input name="firstName" class="form-control mx-sm-4" placeholder="enter your first name" autofocus>
                                 </div>
-                                <small id="fNameHelp" class="text-muted" >
-                                Enter your first name!
-                                </small> 
                             </div>
                             <br>
                             <div class="form-horizontal">
-                                <label>Last Name</label>
+                                <label>Last name: </label>
                                 <div>
-                                    <input name="lastName" class="form-control mx-sm-4">                                
-                                </div>
-                                <small id="LNameHelp" class="text-muted">
-                                Enter your last name!
-                                </small>                                                                                            
+                                    <input name="lastName" class="form-control mx-sm-4" placeholder="enter your last name">                                
+                                </div>                                                                                 
                             </div>
                             <br>                        
                             <div class="form-horizontal">
-                                <label>User Name</label>
+                                <label>Username: </label>
                                 <div>
-                                    <input name="userName" class="form-control mx-sm-4">                                
-                                </div>
-                                <small id="uNameHelp" class="text-muted">
-                                Enter your user name!
-                                </small>                             
+                                    <input name="userName" class="form-control mx-sm-4" placeholder="enter your username">                                
+                                </div>                            
                             </div>
                             <br>                        
                             <div class="form-horizontal">
-                                <label>Password</label>
+                                <label>Password: </label>
                                 <div>
-                                    <input name="password" type="password" class="form-control mx-sm-4">                                
-                                </div>
-                                <small id="passHelp" class="text-muted">
-                                Password must consist of one uppercase, one number and one special character!
-                                </small>                            
+                                    <input name="password" type="password" class="form-control mx-sm-4" placeholder="enter your password">
+                                </div>                            
                             </div>
                             <br>                        
                             <div class="form-horizontal">
-                                <label>Email Address</label>
+                                <label>Email Address: </label>
                                 <div>
-                                    <input name="email" type="email" class="form-control mx-sm-4">                                
-                                </div>
-                                <small id="emailHelp" class="text-muted">
-                                No xyz!
-                                </small>                             
+                                    <input name="email" type="email" class="form-control mx-sm-4" placeholder="enter your email address">
+                                </div>                             
                             </div>
                             <br>                        
                             <div class="form-horizontal">
-                                <label>Comments</label>
+                                <label>Comments: </label>
                                 <div>
-                                    <input name="comments" class="form-control mx-sm-4">                                
-                                </div>
-                                <small id="cHelp" class="text-muted">
-                                Any additional comments
-                                </small>                          
+                                    <input name="comments" class="form-control mx-sm-4" placeholder="enter any additional comments">                                
+                                </div>                         
                             </div>
                             <br>                        
                             <button class="btn btn-default" name="submit" type="submit" value="Submit">Submit</button>
