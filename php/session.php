@@ -2,12 +2,12 @@
 	
 	try
 		{
-		session_start(); # Cookie
+			session_start(); # Cookie
 		}
 
 	catch(Exception $e)
 		{
-		echo "An error has occured";
+			echo "An error has occured";
 		}
 
 ?>
