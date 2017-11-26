@@ -11,6 +11,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="php/signup.php">Sign Up</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="php/login.php">Login</a>
+            </li>            
         </ul>
     </div>
 </nav>
