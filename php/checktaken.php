@@ -23,7 +23,6 @@
         $stmt->bindParam(':userName', $user[2]);
         $stmt->execute();
 
-
         # Check for duplicate username entry
         if ($stmt->rowCount() > 0)
         {
@@ -32,7 +31,7 @@
         else
         {
 
-            # Note to test SQL Injections
+            # Prepare
             $stmt = $db->prepare("INSERT INTO `userinfo` (`firstName`, `lastName`, `userName`, `password`, `email`, `comments`) VALUES (:firstName, :lastName, :userName, :password, :email, :comments)");        
 
             # Parameter, Value
