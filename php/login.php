@@ -13,7 +13,6 @@ include ('connect.php') ?>
 			{
 
 				# Display error if field is empty
-
 				echo "Missing fields";
 			}
 			else
@@ -30,14 +29,12 @@ include ('connect.php') ?>
 				{
 
 					# Redirect to thank you if sucessful
-
 					header("Location:/mySite/php/myWelcome.php");
 				}
 				else
 				{
 
 					# If username or password is incorrect
-
 					echo "The Username and Password combination isn't correct";
 				}
 			}
