@@ -61,6 +61,6 @@
       }
     else
       {
-        echo 'Error in design!'; # Note to redesign
+        echo "Error!"; # Note to redesign
       }
 ?>

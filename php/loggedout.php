@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Vogt Welcome</title>
+        <title>Vogt Logged out</title>
         <base href="/mySite/" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
@@ -25,7 +25,7 @@
         <div class="wrapper">
         <div id="header"></div>  
             <div class="container">
-                <h2 class="Oleo h2">Welcome!</h2>
+                <h2 class="Oleo h2">You are logged out!</h2>
             </div>
         </div>
     <div id="footer" class="footer"></div>
