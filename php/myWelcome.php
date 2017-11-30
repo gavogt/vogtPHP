@@ -1,3 +1,4 @@
+<?php include('session.php') ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,7 +26,7 @@
         <div class="wrapper">
         <div id="header"></div>  
             <div class="container">
-                <h2 class="Oleo h2">Welcome!</h2>
+                <h2 class="Oleo h2">Welcome!  <?php include('welcomeMessage.php') ?> </h2>
             </div>
         </div>
     <div id="footer" class="footer"></div>

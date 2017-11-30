@@ -1,3 +1,4 @@
+<?php include('session.php') ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,13 +23,6 @@
     </head>
     <body>
         <?php include('connect.php') ?>
-        <?php
-        if(isset($message))
-        {
-            echo 'label class="text-danger">'.$message.'</label>';
-
-        }
-        ?>
         <div class="wrapper">
         <div id="header"></div>     
             <div class="container">

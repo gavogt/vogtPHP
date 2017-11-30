@@ -1,6 +1,9 @@
 <?php
 include ('connect.php') ?>
+
 <?php
+
+	include ('session.php');
 
 	$password = $_POST["password"];
 	$userName = $_POST["userName"];
@@ -27,6 +30,8 @@ include ('connect.php') ?>
 				$count = $stmt->rowCount();
 				if ($count > 0)
 				{
+					# Set up username message
+					$_SESSION["userName"] = $_POST["userName"];
 
 					# Redirect to thank you if sucessful
 					header("Location:/mySite/php/myWelcome.php");

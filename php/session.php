@@ -1,13 +1,7 @@
 <?php
 	
-	try
-		{
-			session_start(); # Cookie
-		}
+	session_start();
 
-	catch(Exception $e)
-		{
-			echo "An error has occured";
-		}
+	$_SESSION["userName"];
 
 ?>
