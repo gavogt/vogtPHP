@@ -1,4 +1,3 @@
-<?php include('session.php') ?>
 <nav class="navbar-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -13,7 +12,7 @@
                 <a class="nav-link" href="php/signup.php">Sign Up</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="php/loginPage.php">Login</a>
+                <a class="nav-link" href="php/login.php">Login</a>
             </li>            
         </ul>
     </div>
