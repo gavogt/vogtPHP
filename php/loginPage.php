@@ -21,6 +21,14 @@
         </script>        
     </head>
     <body>
+        <?php include('connect.php') ?>
+        <?php
+        if(isset($message))
+        {
+            echo 'label class="text-danger">'.$message.'</label>';
+
+        }
+        ?>
         <div class="wrapper">
         <div id="header"></div>     
             <div class="container">
@@ -29,15 +37,15 @@
                     <div class="col-sm-4 col-md-4 col-lg-4">
                     </div>
                     <div class="col-sm-4 col-md-4 col-lg-4">
-                        <form class="form " action="login.php" method="post">
+                        <form class="form " action="php/login.php" method="post">
                             <label>Username</label>
                             <div>
-                                <input name = "userName" class="form-control mx-sm-4">
+                                <input name = "userName" type="text" class="form-control mx-sm-4">
                             </div>
                             <br>
                             <label>Password</label>
                             <div>
-                                <input name = "password" class="form-control mx-sm-4">
+                                <input name = "password" type="password" class="form-control mx-sm-4">
                             </div>
                             <br>                        
                             <button class="btn btn-default" name="submit" type="submit" value="Submit">Submit</button>

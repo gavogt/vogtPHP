@@ -25,8 +25,10 @@
         $hash = crypt('$user[3]', $salt_enc);
         $user[3] = $hash;
 
-        # Prepare and excludee duplicate username
-        $stmt = $db->prepare("SELECT userName FROM userinfo WHERE userName = :userName");
+        $query = "SELECT userName FROM userinfo WHERE userName = :userName";
+
+        # Prepare and exclude duplicate username
+        $stmt = $db->prepare($query);
         $stmt->bindParam(':userName', $user[2]);
         $stmt->execute();
 
