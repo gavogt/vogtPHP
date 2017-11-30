@@ -1,16 +1,9 @@
 <?php
+
+	session_name('test');
 	
-	try
-		{
-			session_destroy(); # Cookie destroy
+	session_start();
 
-			# Redirect to thank you if sucessful
-            header("Location:/mySite/php/loggedout.php");
-		}
-
-	catch(Exception $e)
-		{
-			echo "An error has occured";
-		}
+	session_destroy();
 
 ?>

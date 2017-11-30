@@ -1,7 +1,14 @@
 <?php
-	
-	session_start();
 
-	$_SESSION["userName"];
+	try
+	{
+		session_name('test');
+		session_start();
+		$_SESSION["userName"];
+
+	} catch(exception $e)
+	{
+		echo "";
+	}
 
 ?>
